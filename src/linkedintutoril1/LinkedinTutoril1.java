@@ -1,0 +1,53 @@
+
+package linkedintutoril1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author A C E R
+ */
+public class LinkedinTutoril1 {
+
+        public static void main(String[] args) {
+          /*Scanner input = new Scanner(System.in);
+          boolean isOnRepeat = true;
+          while(isOnRepeat){
+              System.out.println("Playing current song");
+              System.out.println("Change the Song?");
+              String userinput = input.next();
+              
+              if(userinput.equals("yes")){
+              isOnRepeat = false;
+          }
+          }
+            System.out.println("Playing next song");*/
+           String question = "Question";
+    String choiceOne = "one";
+    String choiceTwo = "Two";
+    String choiceThree = "Three";
+    
+    String correctAnswer = "Two";
+    
+    //write a print statement asking the question
+        System.out.println(question);
+        //write print statement giving the answer choice
+        System.out.println("1. " + choiceOne);
+        System.out.println("2. " +choiceTwo);
+        System.out.println("3. " +choiceThree);
+        
+        //Have the user input answer
+        Scanner scanner = new Scanner(System.in);
+        //Retrive the user input
+        String input = scanner.next();
+        
+        //if the user's input matches the correct answer
+        if(correctAnswer.equals(input)){            
+            System.out.println("Congrats!!!!  Correct Answer");
+        }else{
+            System.out.println("Correct anwser is " + correctAnswer );
+        }
+    
+    
+}
+}
